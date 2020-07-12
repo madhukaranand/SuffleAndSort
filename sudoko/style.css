@@ -1,0 +1,195 @@
+body{
+    margin: 0px;
+}
+.container h1.title {
+        text-align: center;
+        margin: 4px 0px;
+    }
+    .wrapper {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+    }
+    .container {
+        width: 100%;
+    }
+    .outer-section, .inner-section {
+        display: flow-root;
+    }
+    .sudoko-box {
+        background: #2f454e;
+        font-size: 98px;
+        width: 33.33%;
+        float: left;
+        text-align: center;
+        padding: 60px 0px;
+    }
+    .box-rows {
+        width: 70%;
+    }
+    .main-content-section {
+        display: flex;
+        width: 100%;
+    }
+    .bg-col-fade{
+        background-color: #72c3dc;
+    }
+    .bg-col-dark{
+        background-color: #2B8EAD;
+    }
+    .bg-collin{
+        background-color: #2f454e;
+    }
+    .bg-white-smoke{
+        background-color: #BFBFBF;
+    }
+    .bg-col-dull{
+        background-color: #6F98A8;
+    }
+    .text-white{
+        color: #ffffff;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .suffle-button button.suffle {
+        padding: 16px 126px;
+        font-size: 24px;
+        margin-bottom: 24px;
+        cursor: pointer;
+        color: #fff;
+        background: #72c3dc;
+        border: none;
+        box-shadow: 0px 2px 0px #000;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .sort-button button.sort {
+        padding: 16px 148px;
+        font-size: 24px;
+        margin-bottom: 24px;
+        cursor: pointer;
+        color: #fff;
+        background: #72c3dc;
+        border: none;
+        box-shadow: 0px 2px 0px #000;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .sidebar-content-section {
+        margin-top: 50px;
+        width: 30%;
+    }
+    .suffle-button button:hover, .sort-button button:hover {
+        opacity: .8;
+        transition: 0.5s;
+    }   
+    .mobile-button-section{
+        display: none;
+    }
+    @media only screen and (max-width: 1200px){
+    .sudoko-box {
+        padding: 36px 0px;
+    }
+    .suffle-button button.suffle {
+    padding: 16px 106px;
+    font-size: 20px;
+    margin: 0px;
+    }
+    .sort-button button.sort {
+    padding: 16px 124px;
+    font-size: 20px;
+    margin-top: 10px;
+    }
+    .sidebar-content-section {
+        margin-top: 24px;
+        width: 30%;
+    }
+    }
+    @media only screen and (max-width: 992px){
+    .suffle-button button.suffle {
+    padding: 16px 84px;
+    }
+    .sort-button button.sort {
+    padding: 16px 104px;
+    }
+    }
+    @media only screen and (max-width: 768px){
+    .sudoko-box {
+        padding: 36px 0px;
+    }
+    .suffle-button button.suffle {
+    padding: 16px 52px;
+    font-size: 17px;
+    margin: 0px;
+    }
+    .sort-button button.sort {
+    padding: 16px 67px;
+    font-size: 17px;
+    margin-top: 10px;
+    }
+    .sidebar-content-section {
+        margin-top: 24px;
+        width: 30%;
+    }
+    }
+    @media only screen and (max-width: 600px){
+        h1.title {
+        background-color: #2f454e;
+        margin: 0px;
+        color: #ffffff;
+        padding: 20px 0px;
+        margin:  0px !important;
+    }
+    .box-rows {
+        width: 100%;
+    }
+    .sidebar-content-section {
+        margin-top: 50px;
+        display: none;
+    }
+    .sudoko-box {
+        font-size: 34px;
+        width: 100%;
+        float: left;
+        text-align: center;
+        padding: 4px 0px;
+        margin-bottom: 6px;
+    }
+    .outer-section, .inner-section {
+        display: flow-root;
+        padding: 0px 6px;
+    }
+    .mobile-button-section{
+        display: flex;
+        padding: 10px 0px;
+    }
+    .suffle-button {
+        width: 50%;
+    }
+    .sort-button   {
+        width: 50%;
+    }
+    .suffle-button button.suffle {
+        padding: 12px 38px;
+        font-size: 16px;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    .suffle-button button.suffle {
+        padding: 12px 34px;
+        float: right;
+        margin-bottom: 0px;
+    }
+    .sort-button button.sort {
+        padding: 12px 54px;
+        float: left;
+        margin-bottom: 0px;
+        font-size: 16px;
+        margin-top: 0px;    
+    }
+
+}
+.outer-section h1.title {
+    text-align: center;
+}

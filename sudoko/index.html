@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <h1 class="title">Suffle and Sort</h1>
+                <div class="main-content-section">
+                    <div class="box-rows">
+                        <div class="outer-section">
+                            <div class="mobile-button-section">
+                                <div class="suffle-button text-center">
+                                    <button class="suffle" onclick="shuffle();">SHUFFLE</button>
+                                </div>
+                                <div class="sort-button text-center">
+                                    <button class="sort" onclick="sort();">SORT</button>
+                                </div>
+                            </div>
+                            <div class="inner-section" id="cards">
+                                <div class="sudoko-box bg-col-dull text-white" id="1">
+                                    1
+                                </div>
+                                <div class="sudoko-box bg-col-dark text-white" id="2">
+                                    2
+                                </div>
+                                <div class="sudoko-box bg-collin text-white" id="3">
+                                    3
+                                </div>
+                                <div class="sudoko-box bg-col-dark text-white" id="4">
+                                    4
+                                </div>
+                                <div class="sudoko-box bg-collin text-white" id="5">
+                                   5
+                                </div>
+                                <div class="sudoko-box bg-white-smoke text-white" id="6">
+                                    6
+                                </div>
+                                <div class="sudoko-box bg-white-smoke text-white" id="7">
+                                    7
+                                </div>
+                                <div class="sudoko-box bg-col-fade text-white" id="8">
+                                   8
+                                </div>
+                                <div class="sudoko-box bg-collin text-white" id="9">
+                                    9
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-content-section">
+                        <div class="suffle-button text-center">
+                            <button class="suffle" onclick="shuffle();">SHUFFLE</button>
+                        </div>
+                        <div class="sort-button text-center">
+                            <button class="sort" onclick="sort()">SORT</button>
+                        </div>
+                    </div>
+                </div>
+                <h6>Suffle and Sort by Madhukar Anand</h1>
+            </div>
+        </div>
+        <script language="javascript">
+            function shuffle() {
+                var container = document.getElementById("cards");
+                var elementsArray = Array.prototype.slice.call(container.getElementsByClassName('sudoko-box'));
+
+                elementsArray.forEach(function(element){
+                    container.removeChild(element);
+                })
+
+                shuffleArray(elementsArray);
+
+                elementsArray.forEach(function(element){
+                    container.appendChild(element);
+                })
+            }
+
+            function shuffleArray(array) {
+                for (var i = array.length - 1; i > 0; i--) {
+                    var j = Math.floor(Math.random() * (i + 1));
+                    var temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+                return array;
+            }
+
+            function sort(){
+                location.reload();
+            }
+        </script>
+    </body>
+</html>
